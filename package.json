@@ -1,0 +1,47 @@
+{
+  "name": "update-node-packages",
+  "description": "Tool used to update npm or yarn packages",
+  "version": "0.1.0",
+  "author": {
+    "name": "Adam Boe",
+    "url": "https://github.com/aboe026"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aboe026/update-node-packages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aboe026/update-node-packages/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "update-packages": "./executable.js"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rimraf build",
+    "lint": "eslint . && prettier --check .",
+    "lint-fix": "eslint --fix . && prettier --write .",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "yargs": "17.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.11",
+    "@types/yargs": "17.0.24",
+    "@typescript-eslint/eslint-plugin": "5.57.1",
+    "@typescript-eslint/parser": "5.57.1",
+    "eslint": "8.38.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.8.7",
+    "rimraf": "4.4.1",
+    "ts-node": "10.9.1",
+    "typescript": "5.0.4"
+  },
+  "packageManager": "yarn@3.5.0"
+}
