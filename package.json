@@ -25,7 +25,9 @@
     "clean": "rimraf build",
     "lint": "eslint . && prettier --check .",
     "lint-fix": "eslint --fix . && prettier --write .",
-    "start": "ts-node src/index.ts"
+    "run-built": "node executable.js",
+    "start": "ts-node src/index.ts",
+    "watch": "yarn build --watch"
   },
   "dependencies": {
     "yargs": "17.7.1"
