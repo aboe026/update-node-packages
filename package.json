@@ -27,12 +27,16 @@
     "lint-fix": "eslint --fix . && prettier --write .",
     "run-built": "node executable.js",
     "start": "ts-node src/index.ts",
+    "test": "yarn lint && yarn test-e2e",
+    "test-e2e": "jest test/e2e --config=jest.config.e2e.ts",
     "watch": "yarn build --watch"
   },
   "dependencies": {
     "yargs": "17.7.1"
   },
   "devDependencies": {
+    "@types/fs-extra": "11.0.1",
+    "@types/jest": "29.5.0",
     "@types/node": "18.15.11",
     "@types/yargs": "17.0.24",
     "@typescript-eslint/eslint-plugin": "5.57.1",
@@ -40,8 +44,12 @@
     "eslint": "8.38.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
+    "fs-extra": "11.1.1",
+    "jest": "29.5.0",
+    "jest-junit": "15.0.0",
     "prettier": "2.8.7",
     "rimraf": "4.4.1",
+    "ts-jest": "29.1.0",
     "ts-node": "10.9.1",
     "typescript": "5.0.4"
   },

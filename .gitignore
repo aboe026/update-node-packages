@@ -1,3 +1,5 @@
+node_modules
+
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -16,3 +18,5 @@ build
 coverage
 test-results
 tsconfig.tsbuildinfo
+
+test/e2e/.temp-work-dir
